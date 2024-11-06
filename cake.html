@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emcake Cake </title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #fff0f5;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ffb6c1;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #ff69b4;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #fff0f5;
+        }
+        /* Profile Section */
+#profile {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('j.png') no-repeat center right;
+    background-size: cover;
+    color: #333;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Text Styling */
+#profile h2 {
+    color: #ff69b4;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#profile p {
+    color: black;
+    max-width: 50%;
+}
+
+/* Fade-in Animation for Background */
+#profile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('1d.jpg') no-repeat center center;
+    background-size: cover;
+    transform: translateX(100%);
+    transition: transform 1.5s ease;
+    z-index: -1;
+}
+
+#profile:hover::before {
+    transform: translateX(0);
+}
+
+        /* Gallery Section Styles */
+#gallery {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe4e1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#gallery h2 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+#gallery p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3D Hover Effect */
+.gallery img:hover {
+    transform: scale(1.1) rotateX(10deg) rotateY(10deg);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+        /* Section Styles */
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: #ff69b4;
+            margin-bottom: 10px;
+        }
+
+        /* Grid for services */
+        .service-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-item {
+            flex: 1 1 200px;
+            padding: 20px;
+            background-color: #ffe4e1;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .service-item img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        /* Personnel Profile Styles */
+        .personnel-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .person-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .person-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Emcake Cake bakery</h1>
+    <p>Delicious cakes for every occasion | Contact us: info@yourcakecompany.com | Phone: (123) 456-7890</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="#profile">Company Profile</a>
+    <a href="#services">Services Offered</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#team">Our Team</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<!-- Company Profile Section -->
+<section id="profile">
+    <div class="profile-content">
+        <div class="text">
+            <h2>Emcake Cake Bakery Profile</h2>
+            <p>Welcome to Emcake Cake Bakery – where every slice brings a smile! As a family-owned bakery, we pour love and expertise into each creation, from elegant wedding cakes to delightful birthday treats. Our skilled bakers and decorators use only the finest ingredients to craft cakes that are as stunning as they are delicious. Whether it's a grand celebration or an intimate gathering, we’re here to make it unforgettable with custom designs and exceptional flavor. Discover the perfect centerpiece for your event at Emcake – where your sweetest moments come to life.</p>
+        </div>
+        <!-- <img src="1d.jpg" alt="Emcake Bakery" class="profile-image"> -->
+    </div>
+</section>
+
+
+<!-- Services Offered Section -->
+<section id="services">
+    <h2>Services Offered</h2>
+    <div class="service-grid">
+        <div class="service-item">
+            <img src=".png" alt="Custom Cakes">
+            <h3>Custom Cakes</h3>
+            <p>Personalized cakes designed to match your unique theme and style.</p>
+        </div>
+        <div class="service-item">
+            <img src="9.jpeg" alt="Wedding Cakes">
+            <h3>Wedding Cakes</h3>
+            <p>Beautiful and delicious cakes for your special day.</p>
+        </div>
+        <div class="service-item">
+            <img src="em.png" alt="birthdays cakes">
+            <h3> Enjoy your birthday in a colorfull way.Emcake provide a solution for your birthday cakes. welcome to home of solutions</p>
+        </div>
+        <div class="service-item">
+            <img src="1.png" alt="Desserts">
+            <h3>Desserts</h3>
+            <p>A wide range of pastries and desserts to satisfy every sweet tooth.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <p>Here are some of our latest creations:</p>
+    <div class="gallery">
+        <img src="e.png" alt="Cake 1" width="200">
+        <img src="5.jpeg" alt="Cake 2" width="200">
+        <img src="7.jpeg" alt="Cake 3" width="200">
+        <img src="6.jpeg" alt="Cake 4" width="200">
+    </div>
+</section>
+
+<!-- Personnel Profile Section -->
+<section id="team">
+    <h2>Our Team</h2>
+    <div class="personnel-grid">
+        <div class="person-item">
+            <img src="chef-anna.jpg" alt="Chef Anna">
+            <div>
+                <h3>Chef Anna Baker</h3>
+                <p>Head Pastry Chef with over 15 years of experience in creating elegant cakes.</p>
+            </div>
+        </div>
+        <div class="person-item">
+            <img src="coordinator-john.jpg" alt="John Dough">
+            <div>
+                <h3>John Dough</h3>
+                <p>Event Coordinator, ensuring every order is fulfilled perfectly.</p>
+            </div>
+        </div>
+        <div class="person-item">
+            <img src="decorator-sara.jpg" alt="Sara Cream">
+            <div>
+                <h3>Sara Cream</h3>
+                <p>Decorator who adds magic to each cake with her artistic skills.</p>
+            </div>
+        </div>
+        <div class="person-item">
+            <img src="baker-mary.jpg" alt="Mary Sweets">
+            <div>
+                <h3>Mary Sweets</h3>
+                <p>Baker specializing in custom cake orders for every occasion.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to place an order, feel free to reach out:</p>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Your Cake Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
